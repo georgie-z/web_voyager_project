@@ -2,6 +2,13 @@
 
 This project is based on [WebVoyager](https://arxiv.org/abs/2401.13919) by He, et. al., a vision-enabled web-browsing agent capable of controlling the mouse and keyboard. The agent works by viewing annotated browser screenshots for each turn, then choosing the next step to take. The agent architecture is a basic reasoning and action (ReAct) loop.
 
+@article{he2024webvoyager,
+  title={WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models},
+  author={He, Hongliang and Yao, Wenlin and Ma, Kaixin and Yu, Wenhao and Dai, Yong and Zhang, Hongming and Lan, Zhenzhong and Yu, Dong},
+  journal={arXiv preprint arXiv:2401.13919},
+  year={2024}
+}
+
 The original code was cloned from https://github.com/langchain-ai/langgraph/blob/main/docs/docs/tutorials/web-navigation/web_voyager.ipynb and was adapted for this task.
 
 # AI Web Page Navigator for Bunnings
