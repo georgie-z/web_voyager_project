@@ -61,6 +61,8 @@ This cycle of reasoning, acting, and observing helps the agent adapt to dynamic 
 - Python 3.9 or higher
 - [pip](https://pip.pypa.io/en/stable/installation/)
 - [Node.js](https://nodejs.org/) (required for Playwright)
+- OpenAI API key
+- Langchain API key (optional)
 
 ### Clone repo
 git clone `https://github.com/georgie-z/web_voyager_project.git`  
@@ -73,7 +75,7 @@ source web_voyager_env/bin/activate
 pip install -r requirements.txt  
 
 ### Set Up Environment Variables:
-Replace 'your_openai_api_key' and 'your_langchain_api_key' with your actual API keys in the .env file
+Replace 'OPENAI_API_KEY' and 'LANGCHAIN_API_KEY' with your actual API keys in the .env file
 
 ### Instructions to run the AI agent
 
