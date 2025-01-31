@@ -60,11 +60,24 @@ This cycle of reasoning, acting, and observing helps the agent adapt to dynamic 
 - [Node.js](https://nodejs.org/) (required for Playwright)
 
 ### Clone repo
+git clone https://github.com/georgie-z/web_voyager_project.git
+
 ### Create an environment and install dependencies
 
 python -m venv web_voyager_env
 source web_voyager_env/bin/activate
 pip install -r requirements.txt
+
+### Set Up Environment Variables:
+Replace 'your_openai_api_key' and 'your_langchain_api_key' with your actual API keys.
+
+### Instructions to run the AI agent
+
+1. Open web_voyager_bunnings.py, go to end of script (line 505) and edit the product you want to order and save (Optional). Example already provided in code 
+![image](https://github.com/user-attachments/assets/a6b29f01-cec9-431e-b68d-ac1434104d8f)
+
+2. In terminal or command prompt:
+python web_voyager_bunnings.py
 
 
 
