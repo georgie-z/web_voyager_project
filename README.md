@@ -49,6 +49,7 @@ The AI agent uses the **ReAct Loop** (Reasoning and Acting Loop) to make decisio
 This cycle of reasoning, acting, and observing helps the agent adapt to dynamic situations and make informed decisions.
 
 ## Demo Video
+https://github.com/georgie-z/web_voyager_project/blob/main/Agent%20Demo.mp4 
 https://github.com/georgie-z/web_voyager_project/issues/1#issue-2823459515 
 Link: https://drive.google.com/file/d/17NRo0UA5qV3mxJW9P0stG4rfNWsqbzBR/view?usp=drive_link
 
