@@ -63,7 +63,7 @@ This cycle of reasoning, acting, and observing helps the agent adapt to dynamic 
 - [Node.js](https://nodejs.org/) (required for Playwright)
 
 ### Clone repo
-git clone https://github.com/georgie-z/web_voyager_project.git  
+git clone `https://github.com/georgie-z/web_voyager_project.git`  
 cd web_voyager_project
 
 ### Create an environment and install dependencies
