@@ -70,7 +70,7 @@ source web_voyager_env/bin/activate
 pip install -r requirements.txt  
 
 ### Set Up Environment Variables:
-Replace 'your_openai_api_key' and 'your_langchain_api_key' with your actual API keys.
+Replace 'your_openai_api_key' and 'your_langchain_api_key' with your actual API keys in the .env file
 
 ### Instructions to run the AI agent
 
