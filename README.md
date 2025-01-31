@@ -22,7 +22,7 @@ Beyond the core task, the additional feature chosen for implementation is:
 
 2. GPT-4V (Multi-Modal Model for Vision and Text)
 - The agent leverages GPT-4V, a vision-enabled AI model that can analyze web page screenshots.
-- This allows the AI to “see” web elements and interact with them intelligently (e.g., clicking buttons, filling forms).
+- This allows the AI to “see” web elements and interact with them intelligently (e.g., clicking buttons, scroll, type, etc).
 - It ensures the AI can navigate dynamic web pages without relying on pre-defined HTML structures.
 
 3. Playwright (Automated Browser Interaction)
@@ -38,7 +38,7 @@ Beyond the core task, the additional feature chosen for implementation is:
 
 The AI agent uses the **ReAct Loop** (Reasoning and Acting Loop) to make decisions in a structured, iterative process:
 
-1. **Reasoning**: The agent first analyzes the current environment (e.g., a web page). It identifies key elements (like buttons or text fields) and interprets the user's request. This is done using a model (e.g., GPT-4) that processes the page and determines the next step.
+1. **Reasoning**: The agent first analyses the current environment (e.g., a web page). It identifies key elements (like buttons or text fields) and interprets the user's request. This is done using a model (e.g., GPT-4) that processes the page and determines the next step.
 
 2. **Action**: After reasoning, the agent takes action, such as clicking a button, typing text, or navigating. It interacts with the environment (e.g., a web page) through browser automation tools like Playwright or Puppeteer.
 
@@ -71,7 +71,7 @@ cd web_voyager_project
 ### Create an environment and install dependencies
 
 python -m venv web_voyager_env  
-source web_voyager_env/bin/activate  
+web_voyager_env\Scripts\activate
 pip install -r requirements.txt  
 
 ### Set Up Environment Variables:
