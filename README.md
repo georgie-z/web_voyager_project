@@ -52,6 +52,11 @@ This cycle of reasoning, acting, and observing helps the agent adapt to dynamic 
 [![Video Screenshot](https://github.com/georgie-z/web_voyager_project/blob/main/screenshot.png)]([http://link-to-your-video.com](https://drive.google.com/file/d/17NRo0UA5qV3mxJW9P0stG4rfNWsqbzBR/view?usp=drive_link))
 
 
+<a href="https://drive.google.com/file/d/17NRo0UA5qV3mxJW9P0stG4rfNWsqbzBR/view?usp=drive_link">
+  <img src="https://github.com/georgie-z/web_voyager_project/blob/main/screenshot.png" width="300" />
+</a>
+
+
 
 ## Instructions to run
 
