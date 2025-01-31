@@ -1,0 +1,7 @@
+langgraph
+langsmith
+langchain_openai
+playwright
+nest_asyncio
+python-dotenv
+typing-extensions
