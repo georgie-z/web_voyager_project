@@ -60,13 +60,14 @@ This cycle of reasoning, acting, and observing helps the agent adapt to dynamic 
 - [Node.js](https://nodejs.org/) (required for Playwright)
 
 ### Clone repo
-git clone https://github.com/georgie-z/web_voyager_project.git
+git clone https://github.com/georgie-z/web_voyager_project.git  
+cd web_voyager_project
 
 ### Create an environment and install dependencies
 
-python -m venv web_voyager_env
-source web_voyager_env/bin/activate
-pip install -r requirements.txt
+python -m venv web_voyager_env  
+source web_voyager_env/bin/activate  
+pip install -r requirements.txt  
 
 ### Set Up Environment Variables:
 Replace 'your_openai_api_key' and 'your_langchain_api_key' with your actual API keys.
