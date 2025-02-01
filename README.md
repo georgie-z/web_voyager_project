@@ -44,7 +44,7 @@ The AI agent uses the **ReAct Loop** (Reasoning and Acting Loop) to make decisio
 
 3. **Observation**: After the action, the agent observes the changes in the environment (e.g., the page’s new state). It uses the scratchpad to record its previous reasoning, actions and observations, reassesses the situation, and decides whether further action is needed.
 
-4. **Iteration**: The loop repeats—reasoning about the new state, taking actions, and observing outcomes—until the task is completed). This cycle of reasoning, acting, and observing helps the agent adapt to dynamic situations and make informed decisions. 
+4. **Iteration**: The loop repeats—reasoning about the new state, taking actions, and observing outcomes—until the task is completed. This cycle of reasoning, acting, and observing helps the agent adapt to dynamic situations and make informed decisions. 
 
 ## Demo Video
 
@@ -77,7 +77,7 @@ Replace 'OPENAI_API_KEY' and 'LANGCHAIN_API_KEY' with your actual API keys in th
 
 ### Instructions to run the AI agent
 
-Optional: To edit the product you want to order go end of web_voyager_bunnings.py and edit the question. Example is already provided in the code. 
+Optional: To edit the product you want to order go to the end (line 505) of web_voyager_bunnings.py script and edit the question. Example is already provided in the code. 
 
 In terminal or command prompt:  
 python web_voyager_bunnings.py
