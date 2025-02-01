@@ -38,13 +38,13 @@ Beyond the core task, the additional feature chosen for implementation is:
 
 The AI agent uses the **ReAct Loop** (Reasoning and Acting Loop) to make decisions in a structured, iterative process:
 
-1. **Reasoning**: The agent first examines the environment (the state - page, user input, screenshot image and bounding boxes) and is guided the provided prompt for context, task instructions, and constraints, helping the agent determine the next logical step.
+1. **Reasoning**: The agent first examines the environment (the state - page, user input, screenshot image and bounding boxes) and is guided by the provided prompt for context, task instructions, and constraints, helping the agent determine the next logical step. 
 
-2. **Action**: After reasoning, the agent takes action, such as clicking a button, typing text, etc and follows guidelines and instructions provided in the prompt to ensure it can handle any issues and completes its objectivds
+2. **Action**: After reasoning, the agent takes action, such as clicking a button, typing text, etc and follows g
 
 3. **Observation**: After the action, the agent observes the changes in the environment (e.g., the page’s new state). It uses the scratchpad to record its previous reasoning, actions and observations, reassesses the situation, and decides whether further action is needed.
 
-4. **Iteration**: The loop repeats—reasoning about the new state, taking actions, and observing outcomes—until the task is completed (e.g., purchasing a product or end). This cycle of reasoning, acting, and observing helps the agent adapt to dynamic situations and make informed decisions. 
+4. **Iteration**: The loop repeats—reasoning about the new state, taking actions, and observing outcomes—until the task is completed). This cycle of reasoning, acting, and observing helps the agent adapt to dynamic situations and make informed decisions. 
 
 ## Demo Video
 
