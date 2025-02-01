@@ -40,17 +40,11 @@ The AI agent uses the **ReAct Loop** (Reasoning and Acting Loop) to make decisio
 
 1. **Reasoning**: The agent first examines the environment (the state - page, user input, screenshot image and bounding boxes) and is guided the provided prompt for context, task instructions, and constraints, helping the agent determine the next logical step.
 
-2. **Action**: After reasoning, the agent takes action, such as clicking a button, typing text, etc and follows guidance provided in the prompt to ensure it aligns with the task's requirements.
+2. **Action**: After reasoning, the agent takes action, such as clicking a button, typing text, etc and follows guidelines and instructions provided in the prompt to ensure it can handle any issues and completes its objectivds
 
 3. **Observation**: After the action, the agent observes the changes in the environment (e.g., the page’s new state). It uses the scratchpad to record its previous reasoning, actions and observations, reassesses the situation, and decides whether further action is needed.
 
-4. **Iteration**: The loop repeats—reasoning about the new state, taking actions, and observing outcomes—until the task is completed (e.g., purchasing a product or end).
-
-This cycle of reasoning, acting, and observing helps the agent adapt to dynamic situations and make informed decisions.
-
-ITo handle edge cases and ensure it completes its objectives, the agent was provided guidelines and instructions, some are generic and some are specific to Bunnings Website as shown below:
-
-![image](https://github.com/user-attachments/assets/71932a53-e057-47ac-8345-59e9dcee74b6)
+4. **Iteration**: The loop repeats—reasoning about the new state, taking actions, and observing outcomes—until the task is completed (e.g., purchasing a product or end). This cycle of reasoning, acting, and observing helps the agent adapt to dynamic situations and make informed decisions. 
 
 ## Demo Video
 
