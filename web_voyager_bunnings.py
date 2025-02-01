@@ -80,7 +80,7 @@ class AgentState(TypedDict):
 # 3. Scroll
 # 4. Wait
 # 5. Go back
-# 6. Go to search engine (Google)
+# 6. Go to URL
 # 
 # 
 # We define them below here as functions:
