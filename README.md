@@ -38,15 +38,62 @@ Beyond the core task, the additional feature chosen for implementation is:
 
 The AI agent uses the **ReAct Loop** (Reasoning and Acting Loop) to make decisions in a structured, iterative process:
 
-1. **Reasoning**: The agent first analyses the current environment (e.g., a web page). It identifies key elements (like buttons or text fields) and interprets the user's request. This is done using a model (e.g., GPT-4) that processes the page and determines the next step.
+1. **Reasoning**: The agent first examines the environment (the state - page, user input, screenshot image and bounding boxes) and is guided the provided prompt for context, task instructions, and constraints, helping the agent determine the next logical step.
 
-2. **Action**: After reasoning, the agent takes action, such as clicking a button, typing text, or navigating. It interacts with the environment (e.g., a web page) through browser automation tools like Playwright or Puppeteer.
+2. **Action**: After reasoning, the agent takes action, such as clicking a button, typing text, etc and follows guidance provided in the prompt to ensure it aligns with the task's requirements.
 
-3. **Observation**: After the action, the agent observes the changes in the environment (e.g., the page’s new state). This feedback is used to assess progress.
+3. **Observation**: After the action, the agent observes the changes in the environment (e.g., the page’s new state). It uses the scratchpad to record its previous reasoning, actions and observations, reassesses the situation, and decides whether further action is needed.
 
-4. **Iteration**: The loop repeats—reasoning about the new state, taking actions, and observing outcomes—until the task is completed (e.g., purchasing a product or submitting a form).
+4. **Iteration**: The loop repeats—reasoning about the new state, taking actions, and observing outcomes—until the task is completed (e.g., purchasing a product or end).
 
 This cycle of reasoning, acting, and observing helps the agent adapt to dynamic situations and make informed decisions.
+
+To handle edge cases and ensure it completes its objectives, the agent was provided guidelines and instructions, some are general and some are specific to Bunnings Website.
+
+Imagine you are a robot browsing the web, just like humans. Now you need to complete a task. In each iteration, 
+you will receive an Observation that includes a screenshot of a webpage and some texts. The goal is to search in box 
+the item or product CONTENT, add to cart once, proceed to checkout, close any chat box. 
+Dont add products frequently bought together, you should only add the main product to the cart. 
+When asked for postcode enter 3000. 
+When you find 'Review Cart' is the final ANSWER and you must stop action. This screenshot will 
+feature Numerical Labels placed in the TOP LEFT corner of each Web Element. Carefully analyze the visual 
+information to identify the Numerical Label corresponding to the Web Element that requires interaction, then follow 
+the guidelines and choose one of the following actions:
+
+1. Click a Web Element.
+2. Delete existing content in a textbox and then type content.
+3. Scroll up or down.
+4. Wait 
+5. Go back
+6. Go to URL.
+Correspondingly, Action should STRICTLY follow the format:
+
+- Click [Numerical_Label] 
+- Type [Numerical_Label]; [Content] 
+- Scroll [Numerical_Label or WINDOW]; [up or down] 
+- Wait 
+- GoBack
+- GoToURL [URL]
+- ANSWER; [CONTENT];
+
+Key Guidelines You MUST follow:
+
+* Action guidelines *
+1) Execute only one action per iteration.
+2) When clicking or typing, ensure to select the correct bounding box.
+3) Numeric labels lie in the top-left corner of their corresponding bounding boxes and are colored the same.
+4) When gallery zoom view of the product is displayed click on the x button to close.
+5) Do not click on any boxes with text sort or compare. 
+
+* Web Browsing Guidelines *
+1) Select strategically to minimize time wasted.
+
+Your reply should strictly follow the format:
+
+Thought: {Your detailed thoughts on the info that will help ANSWER)}
+Action: {One Action format you choose}
+Then the User will provide:
+Observation: {A labeled screenshot Given by User}
 
 ## Demo Video
 
