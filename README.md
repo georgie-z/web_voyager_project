@@ -48,10 +48,9 @@ The AI agent uses the **ReAct Loop** (Reasoning and Acting Loop) to make decisio
 
 This cycle of reasoning, acting, and observing helps the agent adapt to dynamic situations and make informed decisions.
 
-To handle edge cases and ensure it completes its objectives, the agent was provided guidelines and instructions, some are general and some are specific to Bunnings Website.
+ITo handle edge cases and ensure it completes its objectives, the agent was provided guidelines and instructions, some are generic and some are specific to Bunnings Website as shown below:
 
-![image](https://github.com/user-attachments/assets/81f40ad1-bb74-452d-9adc-10b4ed0bf015)
-
+![image](https://github.com/user-attachments/assets/71932a53-e057-47ac-8345-59e9dcee74b6)
 
 ## Demo Video
 
