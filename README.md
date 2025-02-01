@@ -21,7 +21,7 @@ Beyond the core task, the additional feature chosen for implementation is:
 - These technologies help the AI agent process user requests, track its state, and make sequential decisions while browsing.
 
 2. GPT-4V (Multi-Modal Model for Vision and Text)
-- The agent leverages GPT-4V, a vision-enabled AI model that can analyze web page screenshots.
+- The agent leverages GPT-4V, a vision-enabled AI model that can analyse web page screenshots.
 - This allows the AI to “see” web elements and interact with them intelligently (e.g., clicking buttons, scroll, type, etc).
 - It ensures the AI can navigate dynamic web pages without relying on pre-defined HTML structures.
 
@@ -40,7 +40,7 @@ The AI agent uses the **ReAct Loop** (Reasoning and Acting Loop) to make decisio
 
 1. **Reasoning**: The agent first examines the environment (the state - page, user input, screenshot image and bounding boxes) and is guided by the provided prompt for context, task instructions, and constraints, helping the agent determine the next logical step. 
 
-2. **Action**: After reasoning, the agent takes action, such as clicking a button, typing text, etc and follows g
+2. **Action**: After reasoning, the agent takes action, such as clicking a button, typing text, scrolling or go back to original URL etc.
 
 3. **Observation**: After the action, the agent observes the changes in the environment (e.g., the page’s new state). It uses the scratchpad to record its previous reasoning, actions and observations, reassesses the situation, and decides whether further action is needed.
 
@@ -69,7 +69,7 @@ cd web_voyager_project
 ### Create an environment and install dependencies
 
 python -m venv web_voyager_env  
-web_voyager_env\Scripts\activate
+web_voyager_env\Scripts\activate  
 pip install -r requirements.txt  
 
 ### Set Up Environment Variables:
@@ -77,9 +77,9 @@ Replace 'OPENAI_API_KEY' and 'LANGCHAIN_API_KEY' with your actual API keys in th
 
 ### Instructions to run the AI agent
 
-1. Open web_voyager_bunnings.py, go to end of script (line 505) and edit the product you want to order and save (Optional). Example already provided in code 
+Optional: To edit the product you want to order go end of web_voyager_bunnings.py and edit the question. Example is already provided in the code. 
 
-2. In terminal or command prompt:
+In terminal or command prompt:  
 python web_voyager_bunnings.py
 
 
